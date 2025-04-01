@@ -1,89 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <link rel="icon" type="image/x-icon" href="faviconcv.ico">
+    <link rel="icon" type="image/x-icon" href="faviconcv.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currículo | Luccas Pino - Eng. Computação</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        padding: 20px;
-        max-width: 800px;
-        margin: auto;
-        background-color: #f4f4f4;
-      }
-      .container {
-        background: rgb(255, 255, 255);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      }
-      img {
-        width: 150px;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto;
-      }
-      .contact img {
-        width: 24px;
-        vertical-align: middle;
-        margin-right: 8px;
-      }
-      .contact a {
-        text-decoration: none;
-        color: #0073b1;
-        font-weight: bold;
-      }
-      h1, h2 {
-        text-align: center;
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <title>Portfólio | Luccas Pino - Eng. Computação</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <div class="logo">Luccas Pino</div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="container">
-      <img src="pfp.jpg" alt="Foto de Luccas Pino" />
+      <section id="about" class="hero">
+        <img src="pfp.jpg" alt="Foto de Luccas Pino" class="profile-img" />
+        <h1>Luccas Pereira de Pino</h1>
+        <p>
+          Graduando em Engenharia de Computação no SENAI CIMATEC (7° semestre).
+          Entusiasta por tecnologia, IA, modelagem de dados, desenvolvimento
+          fullstack e inovação, mas também por filmes, esportes e jogos.
+        </p>
+      </section>
 
-      <h1>Luccas Pereira de Pino</h1>
-      <p style="text-align: center;">
-        Graduando em Engenharia de Computação no SENAI CIMATEC (7° semestre).
-        Entusiasta por tecnologia, IA, data, desenvolvimento fullstack e inovação.
-      </p>
+      <section id="languages">
+        <h2>Línguas e Tecnologias</h2>
+        <div class="skills-container">
+          <div class="languages-section">
+            <h3>Línguas</h3>
+            <div class="flags-container">
+              <div class="flag-item">
+                <img src="brazil-flag.png" alt="Português" class="flag-icon" />
+                <span>Português (Nativo)</span>
+              </div>
+              <div class="flag-item">
+                <img src="usa-flag.png" alt="Inglês" class="flag-icon" />
+                <span>Inglês (Avançado)</span>
+              </div>
+            </div>
+          </div>
 
-      <h2>Línguas</h2>
-      <ul>
-        <li>Português (Nativo)</li>
-        <li>Inglês (Avançado)</li>
-      </ul>
+          <div class="technologies-section">
+            <h3>Tecnologias</h3>
+            <div class="tech-icons">
+              <div class="tech-item">C</div>
+              <div class="tech-item">C++</div>
+              <div class="tech-item">Java</div>
+              <div class="tech-item">Python</div>
+              <div class="tech-item">OracleSQL</div>
+              <div class="tech-item">HTML</div>
+              <div class="tech-item">CSS</div>
+              <div class="tech-item">JavaScript</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h2>Experiências</h2>
-      <h3>RAS - Robotics and Automation Society (2023-2024)</h3>
-      <p>Capacitação em um dos capítulos estudantis da IEEE sediado no SENAI CIMATEC.</p>
+      <section id="experience">
+        <h2>Experiências</h2>
+        <div class="experience-item">
+          <h3>RAS - Robotics and Automation Society</h3>
+          <p class="experience-date">2023-2023</p>
+          <p>
+            Durante minha capacitação na RAS, participei do programa de
+            trainees, onde tive a oportunidade de aprimorar meus conhecimentos
+            de robótica, automação, microcontroladores e GitHub
+          </p>
+        </div>
 
-      <h3>RSE Engenharia - Estágio em TI (2024-2025*)</h3>
-      <p>Atuação em:</p>
-      <ul>
-        <li>Automações de processos</li>
-        <li>Desenvolvimento de aplicativos</li>
-        <li>Low Code</li>
-      </ul>
+        <div class="experience-item">
+          <h3>RSE Engenharia - Estágio em TI</h3>
+          <p class="experience-date">2024-Atual</p>
+          <p>
+            Atuo na área de inovação e tecnologia, desenvolvendo soluções que
+            integram automação de processos, pesquisa aplicada e desenvolvimento
+            de aplicativos (low-code)
+          </p>
+        </div>
+      </section>
 
-      <h2>Contato</h2>
-      <p class="contact">
-        <img src="email.png" alt="Email" /> luccaspino@icloud.com
-      </p>
-      <p class="contact">
-        <img src="linkedin.png" alt="LinkedIn" />
-        <a href="https://www.linkedin.com/in/luccas-pino-12430a268/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </p>
-      <p class="contact">
-        <img src="github.png" alt="GitHub" />
-        <a href="https://github.com/luccaspino" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
+      <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-front">
+                <img
+                  src="ticket.png"
+                  alt="Ticket Generator"
+                  class="project-image"
+                />
+                <div class="project-info">
+                  <h3>Ticket Generator</h3>
+                  <p>Criação de tickets com validações de campos</p>
+                </div>
+              </div>
+              <div class="project-back">
+                <h3>Ticket System</h3>
+                <p>
+                  Criação de tickets a partir de um desafio do FrontEnd mentor.
+                </p>
+                <p>Tecnologias: Html, Css e JavaScript</p>
+                <div class="project-links">
+                  <a
+                    href="https://ticket.luccaspino.tech"
+                    target="_blank"
+                    class="project-link"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/luccaspino/ticket-system"
+                    target="_blank"
+                    class="project-link"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-front">
+                <img
+                  src="idade.png"
+                  alt="Age Calculator"
+                  class="project-image"
+                />
+                <div class="project-info">
+                  <h3>Age Calculator</h3>
+                  <p>Calculadora de idade</p>
+                </div>
+              </div>
+              <div class="project-back">
+                <h3>Age Calculator</h3>
+                <p>
+                  Aplicação na web que calcula a idade exata a partir da data de
+                  nascimento, mostrando anos, meses e dias.
+                </p>
+                <p>Tecnologias: React, JavaScript, Css</p>
+                <div class="project-links">
+                  <a
+                    href="https://agecalc.luccaspino.tech"
+                    target="_blank"
+                    class="project-link"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/luccaspino/age-calculator"
+                    target="_blank"
+                    class="project-link"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-front">
+                <img src="gameboxd.png" alt="API Games" class="project-image" />
+                <div class="project-info">
+                  <h3>API Games</h3>
+                  <p>API para catalogação de jogos e avaliações.</p>
+                </div>
+              </div>
+              <div class="project-back">
+                <h3>API Games</h3>
+                <p>API de catalogação de jogos</p>
+                <p>Tecnologias: React, TypeScript, Css</p>
+                <div class="project-links">
+                  <a href="https://api-games.vercel.app" class="project-link"
+                    >Em Breve</a
+                  >
+                  <a
+                    href="https://github.com/Miltchola/api_games"
+                    target="_blank"
+                    class="project-link"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contato</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <img src="email.png" alt="Email" />
+            <a href="mailto:luccaspino@icloud.com">luccaspino@icloud.com</a>
+          </div>
+          <div class="contact-item">
+            <img src="linkedin.png" alt="LinkedIn" />
+            <a
+              href="https://www.linkedin.com/in/luccas-pino-12430a268/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="contact-item">
+            <img src="github.png" alt="GitHub" />
+            <a href="https://github.com/luccaspino" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <footer>
+      <p>&copy; 2025 Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
